@@ -1,8 +1,20 @@
 #!/usr/bin/python3
+"""
+Module for lockboxes.
+"""
 opened_box=[]
 keys_l = []
 from typing import List
 def canUnlockAll(boxes: List[List[int]]) -> bool:
+     """
+    Determines if all the boxes can be opened.
+
+    Args:
+        boxes (List[List[int]]): A list of lists where each sublist contains the keys inside a box.
+
+    Returns:
+        bool: True if all boxes can be opened, False otherwise.
+    """
     opened_box.append(boxes[0])
     for i in range(100):
         for box in opened_box:
