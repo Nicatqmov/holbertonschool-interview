@@ -15,7 +15,7 @@ def canUnlockAll(boxes: List[List[int]]) -> bool:
     Returns:
         bool: True if all boxes can be opened, False otherwise.
     """
-    
+
     if not boxes or len(boxes) == 1:
         return True
 
@@ -33,5 +33,10 @@ def canUnlockAll(boxes: List[List[int]]) -> bool:
         return True
     else:
         return False
+    
+# Usage example
+if __name__ == "__main__":
+    boxes = [[1], [2], [3], []]
+    print(canUnlockAll(boxes))  # Output: True
 
 
