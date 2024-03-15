@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-opened_box=[]
+
+opened_box = []
 keys_l = []
+
 def canUnlockAll(boxes):
     opened_box.append(boxes[0])
     for i in range(100):
@@ -16,4 +18,3 @@ def canUnlockAll(boxes):
         return True
     else:
         return False
-
