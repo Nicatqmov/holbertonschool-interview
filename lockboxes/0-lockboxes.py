@@ -6,7 +6,7 @@ opened_box=[]
 keys_l = []
 from typing import List
 def canUnlockAll(boxes: List[List[int]]) -> bool:
-     """
+    """
     Determines if all the boxes can be opened.
 
     Args:
@@ -15,6 +15,10 @@ def canUnlockAll(boxes: List[List[int]]) -> bool:
     Returns:
         bool: True if all boxes can be opened, False otherwise.
     """
+    
+    if not boxes or len(boxes) == 1:
+        return True
+
     opened_box.append(boxes[0])
     for i in range(100):
         for box in opened_box:
