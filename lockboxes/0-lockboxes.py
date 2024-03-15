@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 opened_box=[]
 keys_l = []
-def canUnlockAll(boxes):
+from typing import List
+def canUnlockAll(boxes: List[List[int]]) -> bool:
     opened_box.append(boxes[0])
     for i in range(100):
         for box in opened_box:
@@ -16,3 +17,5 @@ def canUnlockAll(boxes):
         return True
     else:
         return False
+
+
