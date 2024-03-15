@@ -14,8 +14,6 @@ def canUnlockAll(boxes):
     if(0 in keys_l):
         keys_l.remove(0)
     if(len(keys_l) == len(boxes)-1):
-        return True
+        print('True')
     else:
-        return False
-print(canUnlockAll(boxes))
-
+        print('False')
