@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+boxes = [[1, 4], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]
 opened_box=[]
 keys_l = []
 def canUnlockAll(boxes):
@@ -13,6 +14,7 @@ def canUnlockAll(boxes):
     if(0 in keys_l):
         keys_l.remove(0)
     if(len(keys_l) == len(boxes)-1):
-        print('True')
+        return True
     else:
-        print('False')
+        return False
+print(canUnlockAll(boxes))
